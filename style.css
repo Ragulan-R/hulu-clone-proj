@@ -178,4 +178,28 @@ nav {
     text-align: center;
     padding: 0 25px;
   }
+
+  .headerTextOne {
+    margin-bottom: 50px;
+  }
+
+  .headerTextTwo {
+    display: none;
+  }
+
+  .subHeader {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .subHeader img {
+    width: 200px;
+    margin: auto;
+  }
+
+  .subHeader > div:last-of-type {
+    justify-self: center;
+    align-self: center;
+  }
 }
