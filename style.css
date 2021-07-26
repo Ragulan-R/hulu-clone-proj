@@ -257,6 +257,45 @@ nav {
   text-align: left;
 }
 
+.live {
+  background: #151516;
+  padding: 40px;
+}
+
+.liveBorder {
+  border: 5px solid #1ce783;
+  border-radius: 16px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.live a {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+/* Chevron */
+.chevron {
+  fill: #fff;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  padding-top: 40px;
+  animation: hover-me 0.5s infinite ease-in-out alternate;
+}
+
+@keyframes hover-me {
+  100% {
+    transform: translate3d(0, 25px, 0);
+  }
+}
+
 /* repeat(4, 1fr) */
 
 /* Media Queries */
@@ -312,5 +351,13 @@ nav {
 
   .covers {
     grid-template-columns: 1fr;
+  }
+
+  .liveBorder {
+    padding: 30px 10px;
+  }
+
+  .chevron {
+    padding-top: 8px;
   }
 }
