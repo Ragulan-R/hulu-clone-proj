@@ -220,7 +220,7 @@ nav {
   height: 500px;
   width: 300px;
   position: relative;
-  border: 1px solid gold;
+  /* border: 1px solid gold; */
 }
 
 .coverOverlay {
@@ -262,6 +262,12 @@ nav {
 /* Media Queries */
 /* Header MQ */
 
+@media only screen and (max-width: 1100px) {
+  .covers {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .logo {
     width: 200px;
@@ -294,5 +300,17 @@ nav {
   .subHeader > div:last-of-type {
     justify-self: center;
     align-self: center;
+  }
+
+  .largeText {
+    line-height: 1.4;
+    font-size: 40px;
+  }
+  .subText {
+    font-size: 20px;
+  }
+
+  .covers {
+    grid-template-columns: 1fr;
   }
 }
