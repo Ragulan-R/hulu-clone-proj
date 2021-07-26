@@ -89,6 +89,17 @@ h4 {
   text-decoration: underline;
 }
 
+.largeText {
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.subText {
+  max-width: 850px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
 /* Header */
 header {
   height: 600px;
@@ -155,7 +166,6 @@ nav {
     #08141f 100%
   );
 }
-
 /* targets top level div and then goes to last div */
 .subHeader > div:last-of-type {
   justify-self: end;
@@ -165,6 +175,69 @@ nav {
 .subHeader > div:last-of-type .subHeaderLink {
   text-align: center;
 }
+
+/* Categories  */
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 80px 40px;
+  justify-content: center;
+}
+
+.covers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 40px;
+  gap: 20px;
+}
+
+/* targets top level divs */
+/* box relative so text can be absolute */
+.covers > div {
+  height: 500px;
+  width: 300px;
+  position: relative;
+  border: 1px solid gold;
+}
+
+.coverOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      156.82deg,
+      rgba(0, 0, 0, 0.6) 4.58%,
+      rgba(0, 0, 0, 0) 69.61%
+    ),
+    linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+}
+
+.coverOne {
+  background: url(./img/cover-1.jpg) no-repeat center center / cover;
+}
+.coverTwo {
+  background: url(./img/cover-2.jpg) no-repeat center center / cover;
+}
+.coverThree {
+  background: url(./img/cover-3.jpg) no-repeat center center / cover;
+}
+.coverFour {
+  background: url(./img/cover-4.jpg) no-repeat center center / cover;
+}
+
+.coverText {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+}
+
+/* repeat(4, 1fr) */
 
 /* Media Queries */
 /* Header MQ */
