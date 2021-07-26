@@ -34,7 +34,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: greenyellow;
+  color: #00ed82;
 }
 
 .button {
@@ -53,16 +53,40 @@ a:hover {
   letter-spacing: 1.25px;
 }
 
+.buttonOutline {
+  background: none;
+  color: white;
+  border: 1.5px solid white;
+}
+
+.buttonOutline:hover {
+  color: white;
+  border-color: grey;
+}
+
 .legalText {
   font-size: 12px;
   color: grey;
   margin-top: 20px;
 }
 
+h3 {
+  font-size: 26px;
+  font-weight: 300;
+}
+
 h4 {
   color: #00ed82;
   text-transform: uppercase;
   font-size: 12px;
+}
+
+.subHeaderLink {
+  display: block;
+  color: grey;
+  font-size: 12px;
+  margin-top: 5px;
+  text-decoration: underline;
 }
 
 /* Header */
@@ -115,6 +139,31 @@ nav {
 
 .trialButton:hover {
   opacity: 0.7;
+}
+
+/* Sub Header */
+.subHeader {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  gap: 40px;
+  align-items: center;
+  padding: 30px 40px;
+  background: linear-gradient(
+    318.68deg,
+    #0f495c 0%,
+    #0d3640 49.72%,
+    #08141f 100%
+  );
+}
+
+/* targets top level div and then goes to last div */
+.subHeader > div:last-of-type {
+  justify-self: end;
+  align-self: end;
+}
+
+.subHeader > div:last-of-type .subHeaderLink {
+  text-align: center;
 }
 
 /* Media Queries */
