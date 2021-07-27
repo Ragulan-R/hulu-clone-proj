@@ -296,10 +296,43 @@ nav {
   }
 }
 
-/* repeat(4, 1fr) */
+/* Live Sports */
+
+.liveSports {
+  background: url(./img/live-sports.jpg) no-repeat center center / cover;
+  height: 800px;
+  position: relative;
+}
+
+.liveSportsContent {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  max-width: 550px;
+}
+
+.liveSportsLogos {
+  width: 300px;
+  display: flex;
+  margin-top: 35px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.liveSportsLogos > div {
+  background: url(./img/network-logo-bg.png) no-repeat center center / cover;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.liveSportsLogos img {
+  width: 45px;
+}
 
 /* Media Queries */
-/* Header MQ */
 
 @media only screen and (max-width: 1100px) {
   .covers {
