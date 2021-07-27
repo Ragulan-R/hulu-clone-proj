@@ -444,4 +444,12 @@ nav {
     left: 30px;
     margin-top: 50px;
   }
+
+  .footerList {
+    flex-direction: column;
+  }
+
+  .footerList ul {
+    margin-top: 10px;
+  }
 }
