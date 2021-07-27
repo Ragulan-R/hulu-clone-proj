@@ -329,7 +329,7 @@ nav {
 }
 
 .liveSportsLogos img {
-  width: 45px;
+  width: 40px;
 }
 
 /* Media Queries */
@@ -392,5 +392,15 @@ nav {
 
   .chevron {
     padding-top: 8px;
+  }
+
+  .liveSports {
+    background: url(./img/live-sports-small.jpg) no-repeat center center / cover;
+  }
+
+  .liveSportsContent {
+    top: 30px;
+    left: 30px;
+    margin-top: 50px;
   }
 }
