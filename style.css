@@ -390,6 +390,17 @@ nav {
   color: black;
   background: white;
   position: relative;
+  /* keyframe animation for smooth open and close */
+  animation: loginOpen 2s;
+}
+
+@keyframes loginOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .modalBody {
